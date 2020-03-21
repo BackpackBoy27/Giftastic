@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+​
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+​
+    <title>GifTastic</title>
 </head>
+​
 <body>
-    <div>
-        <h2>Gif dat Boot</h2>
-        <form>
-            <input type="search" name="search" class="search-input">
-            <input type="submit" name="submit" class="submit-btn" value="SEARCH">
-        </form>
-        <div class="api-results"></div>
+    <div class="container">
+        <!-- Main title -->
+        <header class="title-container">
+            <h1 class="main-title">GifTastic App</h1>
+        </header>
+​
+        <!-- SearchBox -->
+        <div class="textbox-container">
+            <form>
+                <input type="text" name="textBox" id="textBox">
+                <input type="submit" name="submit" id="submit" value="Add Name">
+            </form>
+        </div>
+​
+        <!-- Tags -->
+        <div class="tags-container">
+            <div id="tags"></div>
+        </div>
+​
+        <!-- Images -->
+        <div id="gif-container" class="img-container">
+            <div class="img"></div>
+        </div>
+​
     </div>
-
+​
+​
+​
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
+​
 </html>
